@@ -1,0 +1,9 @@
+[project]
+name = "code-lingo"
+version = "0.1.0"
+description = "A command-line tool to generate human-readable summaries of Python code."
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.scripts]
+codelingo = "code_lingo.__main__:main"
