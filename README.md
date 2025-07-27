@@ -1,36 +1,23 @@
-# Code Lingo 🗣️
+# 🚀 Code Lingo — Understand Your Code Instantly
 
-> _Get the lay of the land of any Python file or project in seconds._
-
-**Code Lingo** is a command-line tool that generates **human-readable summaries** of Python code. Whether you’re onboarding to a new codebase or revisiting old projects, Code Lingo helps you quickly understand the structure — so you can focus on what really matters: the logic.
+> A sleek command-line tool that generates **human-readable summaries** of Python codebases using Python’s built-in `ast` module.
 
 ---
 
-## 🧠 The Problem
+## 📌 Overview
 
-When working with unfamiliar Python code, it's tedious and time-consuming to manually open files just to see:
+When diving into unfamiliar Python code, the first challenge is understanding the structure — what classes exist, which functions are defined, and what the file imports. Manually navigating each file is inefficient.
 
-- What classes are defined?
-- What public methods exist?
-- What modules are imported?
-
-**Code Lingo** automates this discovery process, giving you an instant summary of code structure using Python's `ast` module.
+**Code Lingo** eliminates this friction by producing a high-level summary of any Python file or project folder in seconds.
 
 ---
 
 ## ✨ Features
 
-- 🔍 **Analyze Single Files or Entire Directories**  
-  Point it to a file or folder — Code Lingo will do the rest.
-  
-- 📚 **Readable Summaries**  
-  Clean breakdowns of imports, functions, classes, and public methods.
-
-- 🚫 **Ignore Internals**  
-  Internal helpers (like `_private_stuff`) are ignored by default to reduce noise.
-
-- 🛠️ **AST-Powered**  
-  Uses Python’s Abstract Syntax Tree (`ast`) for precise and reliable parsing.
+- 🔍 **Single File or Full Directory Support** — Analyze individual files or entire project folders with ease.
+- 📑 **Readable Summaries** — Clearly lists imports, top-level functions, and public class methods.
+- 🚫 **Noise-Free Output** — Skips private functions and internal helpers (like `_hidden_function`) to keep results clean.
+- 🛠 **Accurate Parsing with `ast`** — Leverages Python’s Abstract Syntax Tree for reliable and extensible code analysis.
 
 ---
 
@@ -38,45 +25,43 @@ When working with unfamiliar Python code, it's tedious and time-consuming to man
 
 1. **Clone the repository**
 
-   ```bash
-   git clone https://github.com/haarish-v/code-lingo.git
-   cd code-lingo
-````
+```bash
+git clone https://github.com/haarish-v/code-lingo.git
+cd code-lingo
+```
 
 2. **Create and activate a virtual environment**
 
-   ```bash
-   # Create virtual environment
-   python -m venv venv
+```bash
+# Create the venv
+python -m venv venv
 
-   # Activate (Windows PowerShell)
-   .\venv\Scripts\Activate.ps1
+# Activate (Windows PowerShell)
+.\venv\Scripts\Activate.ps1
 
-   # OR (macOS/Linux)
-   source venv/bin/activate
-   ```
+# Activate (macOS/Linux)
+source venv/bin/activate
+```
 
 3. **Install the package in editable mode**
 
-   ```bash
-   pip install -e .
-   ```
+```bash
+pip install -e .
+```
 
-   ✅ This will install `codelingo` as a command-line tool.
+✅ This installs `codelingo` as a terminal command.
 
 ---
 
 ## 🚀 Usage
 
-Once installed, you can run Code Lingo like this:
-
-### ▶️ Analyze a single file
+### 📂 Analyze a single file
 
 ```bash
 codelingo path/to/your/file.py
 ```
 
-### 📂 Analyze a full directory
+### 🗂 Analyze an entire directory
 
 ```bash
 codelingo path/to/your/project/
@@ -84,7 +69,7 @@ codelingo path/to/your/project/
 
 ---
 
-## 📦 Example Output
+## 🧪 Example Output
 
 ```text
 --- Code Lingo Report for: sample.py ---
@@ -108,41 +93,38 @@ Classes:
 
 ## ✅ Running Tests
 
-Code Lingo uses `pytest` for testing. To run tests:
+To run unit tests with `pytest`:
 
-1. Install `pytest` if not already:
+1. Install dependencies (if not already):
 
-   ```bash
-   pip install pytest
-   ```
+```bash
+pip install pytest
+```
 
-2. From the root of the project, run:
+2. Run tests from the project root:
 
-   ```bash
-   pytest
-   ```
-
----
-
-## 🔗 Links
-
-* 👨‍💻 **Portfolio**: [haarish.in](https://haarish.in)
-* 🧠 **LeetCode**: [Haarish\_v](https://leetcode.com/u/Haarish_v/)
-* 💼 **LinkedIn**: [linkedin.com/in/haarishv](https://www.linkedin.com/in/haarishv/)
+```bash
+pytest
+```
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
-See the [LICENSE](./LICENSE) file for more information.
+**MIT License** — See the [LICENSE](./LICENSE) file for details.
 
 ---
 
-## 🙌 Contributions
+## 🔗 Links
 
-Pull requests are welcome! If you have ideas to improve this tool or want to add features, feel free to fork and submit a PR.
+- 🧠 LeetCode: [Haarish_v](https://leetcode.com/u/Haarish_v/)
+- 👨‍💼 LinkedIn: [linkedin.com/in/haarishv](https://www.linkedin.com/in/haarishv/)
+- 🌐 Portfolio: [haarish.in](https://haarish.in)
 
 ---
 
-```
+## 🤝 Contributing
+
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to fork this repo and submit a pull request.
+
+---
