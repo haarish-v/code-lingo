@@ -1,8 +1,3 @@
-Here’s a **professional and complete** `README.md` for your **Code Lingo** project, combining all the elements you've shared and enhancing them for clarity, formatting, and completeness.
-
----
-
-````markdown
 # Code Lingo 🗣️
 
 > _Get the lay of the land of any Python file or project in seconds._
